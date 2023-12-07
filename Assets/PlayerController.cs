@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
             // Debug.Log($"Euler x, {cameraObject.transform.rotation.eulerAngles.x}");
             if(cameraObject.transform.rotation.eulerAngles.x < 90)
             {
-                cameraObject.transform.rotation = Quaternion.Euler(cameraObject.transform.rotation.eulerAngles.x, 0, 0);               
+              //  cameraObject.transform.rotation = Quaternion.Euler(cameraObject.transform.rotation.eulerAngles.x, 0, 0);               
             } else if(cameraObject.transform.rotation.x < 270)
             {
               //  cameraObject.transform.rotation = Quaternion.Euler(90, 0, 0);
