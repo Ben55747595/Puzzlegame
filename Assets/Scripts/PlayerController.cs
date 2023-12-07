@@ -17,17 +17,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetKey(KeyCode.W))
         {
-
-            rigidBody.AddForce(transform.forward * speed);
-                  
+            rigidBody.AddForce(transform.forward * speed);                  
         }
         if (Input.GetKey(KeyCode.S))
         {
             rigidBody.AddForce(-transform.forward * speed);
-
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -67,5 +63,10 @@ public class PlayerController : MonoBehaviour
         }
 
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Player entered collider " + other.name);
     }
 }
